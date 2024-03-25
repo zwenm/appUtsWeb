@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+/* login.html */
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+}
+
+.lomgim {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-image: url("92149333_p0_master1200.jpg");
+}
+
+.container {
+  width: 50vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "login";
+  box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+  border-radius: 20px;
+  background: white;
+  overflow: hidden;
+}
+
+.design {
+  grid-area: design;
+  display: none;
+  position: relative;
+  background-image: url("92149333_p0_master1200.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 25%;
+}
+
+.login {
+  grid-area: login;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: white;
+}
+
+.login h3.title {
+  margin: 15px 0;
+}
+
+.text-input {
+  background: #e6e6e6;
+  height: 40px;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 15px;
+  margin: 5px 0;
+}
+
+.text-input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.text-input img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.text-input i {
+  color: #686868;
+}
+
+.login-btn {
+  width: 68%;
+  padding: 10px;
+  color: white;
+  background: #477998;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-btn:hover {
+  background-color: #38647F;
+}
+
+.login-btn:active {
+  background-color: #2B536C;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "design login";
+  }
+
+  .design {
+    display: block;
+  }
+}
+
+/* order.html */
+
+body {
+  background-color: #c4d6b0;
+}
+
+#container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #DBEBC8;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #291f1e;
+  padding-bottom: 10px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-price {
+  text-align: right;
+}
+
+span {
+  font-weight: bold;
+}
+
+#total {
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#order-button {
+  background-color: #f64740;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#order-button:hover {
+  background-color: #D1332E;
+  /* Dark Green */
+}
+
+#order-button:active {
+  background-color: #B52722;
+  /* Very Dark Green */
+}
