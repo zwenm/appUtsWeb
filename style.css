@@ -59,8 +59,8 @@
 .text-input {
   background: #e6e6e6;
   height: 40px;
-  display: flex;
   width: 60%;
+  display: flex;
   align-items: center;
   border-radius: 10px;
   padding: 0 15px;
@@ -74,15 +74,6 @@
   width: 100%;
   height: 100%;
   margin-left: 10px;
-}
-
-.text-input img {
-  width: 25px;
-  cursor: pointer;
-}
-
-.text-input i {
-  color: #686868;
 }
 
 .login-btn {
@@ -165,12 +156,7 @@ img {
   text-align: right;
 }
 
-span {
-  font-weight: bold;
-}
-
 #total {
-  font-weight: bold;
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
@@ -194,10 +180,8 @@ span {
 
 #order-button:hover {
   background-color: #D1332E;
-  /* Dark Green */
 }
 
 #order-button:active {
   background-color: #B52722;
-  /* Very Dark Green */
 }
