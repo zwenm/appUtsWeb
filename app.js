@@ -1,3 +1,15 @@
+function auth() {
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  if (email == "masuken.com" && password == "233307081") {
+      window.location.assign("order.html");
+      alert("Berhasil login sebagai seller")
+  } else {
+      alert("Informasi Akun Salah");
+      return;
+  }
+}
+
 function calculateTotal() {
   let total = 0;
   document.querySelectorAll('#items li').forEach(function(item) {
@@ -8,12 +20,10 @@ function calculateTotal() {
   document.getElementById('total-price').textContent = formatCurrency(total);
 }
 
-// Event listener untuk setiap input
 document.querySelectorAll('#items input').forEach(function(input) {
   input.addEventListener('change', calculateTotal);
 });
 
-// Panggil calculateTotal saat halaman dimuat
 calculateTotal();
 
 function formatCurrency(amount) {
@@ -27,20 +37,8 @@ function resetTotal() {
   });
 }
 
-// Tombol Order Now
 document.getElementById('order-button').addEventListener('click', function() {
   calculateTotal();
   resetTotal();
   alert('Terima kasih! Pesanan Anda telah diterima.');
 });
-function auth() {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    if (email == "masuken.com" && password == "233307081") {
-        window.location.assign("order.html");
-        alert("Berhasil login sebagai seller")
-    } else {
-        alert("Informasi Akun Salah");
-        return;
-    }
-}
